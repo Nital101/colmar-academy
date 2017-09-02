@@ -57,6 +57,24 @@ h3 {
   margin: 0rem 1.5rem 0rem 1rem;
 }
 
+.mobile-icon {
+  display: none;
+}
+
+@media only screen and (max-width: 670px){
+  .header .left, .header .right {
+    display: none;
+  }
+
+  .mobile-icon {
+    display: flex;
+  }
+
+  .header .content-container {
+    padding: 1rem 1.5rem;
+  }
+}
+
 /*----------------Section One - Introduction-----------------------------*/
 
 .one .content-container {
@@ -98,7 +116,7 @@ h3 {
   color: #AAAAAA;
   width: 100%;
   text-align: center;
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
 }
 
 #start p{
@@ -108,6 +126,18 @@ h3 {
 #start:hover {
   background-color: #E59866;
   color: #34495E;
+}
+
+@media only screen and (max-width: 700px){
+  .one .left {
+    display: none;
+  }
+
+  .one .right{
+    width: 100%;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
 }
 
 /*----------------Section Two - Features------------------------*/
@@ -183,6 +213,55 @@ h3 {
   background-color: #EBF5FB;
 }
 
+.image-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 700px){
+  .two .left {
+    display: none;
+  }
+
+  .two .right{
+    width: 100%;
+    padding: 1rem 1rem 2rem 1rem;
+  }
+
+  .feature {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feature-left {
+    width: 100%;
+  }
+
+  .feature-right {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 4rem;
+  }
+
+  #orientation {
+    border: none;
+  }
+
+  #lecture {
+    background-color: white;
+  }
+
+  .image-desktop {
+    display: none;
+  }
+
+  .image-mobile {
+    display: flex;
+  }
+
+
+}
+
 /*----------------Section Three - Courses------------------------*/
 
 .three .content-container {
@@ -229,6 +308,42 @@ h3 {
 
 .course p {
   margin-top: 0.5rem;
+}
+
+.courses-mobile-container {
+  display: none;
+}
+
+@media only screen and (max-width: 700px){
+  .courses-desktop-container {
+    display: none;
+  }
+
+  .courses-mobile-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .three .content-container {
+    background-color: white;
+    border-top: 2px solid #EBF5FB;
+  }
+
+  .course-mobile {
+    background-color: #EBF5FB;
+    margin: 0.5rem 1rem;
+    padding: 1rem 0 1.5rem 1rem;
+  }
+
+  .course-mobile:first-child {
+    margin-top: 0;
+  }
+
+  .course-mobile:last-child {
+    margin-bottom: 0;
+  }
 }
 
 /*----------------Section Four - Thesis Exhibit------------------------*/
@@ -295,6 +410,29 @@ video {
   width: 65%;
 }
 
+@media only screen and (max-width: 700px){
+  .four .right {
+    display: none;
+  }
+
+  #four-flexbox{
+    padding: 0;
+  }
+
+  #thesis-text {
+    display: none;
+  }
+
+  .four .left {
+    width: 100%;
+    margin: 1.5rem 0;
+  }
+
+  video {
+    margin: 0;
+  }
+}
+
 /*----------------Footer------------------------*/
 /*footer .content-container {
   border-right: 0.25rem solid #EBF5FB;
@@ -306,5 +444,17 @@ video {
   justify-content: space-between;
   border-top: 0.25rem solid #EBF5FB;
   padding: 1rem 1.5rem 2rem 1.5rem;
+
+}
+
+@media only screen and (max-width: 700px){
+  #footer-flexbox {
+    padding: 1rem 1.5rem;
+  }
+
+  footer .right {
+    display: none;
+  }
+
 
 }

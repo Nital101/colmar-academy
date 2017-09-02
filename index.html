@@ -24,8 +24,24 @@
       <p>For companies</p>
       <p>Sign in</p>
     </div>
+
+      <!--Mobile Content-->
+
+      <div class="mobile-icon">
+        <img src="./resources/images/ic-logo.svg"/>
+      </div>
+      <div class="mobile-icon">
+        <img src="./resources/images/ic-on-campus.svg"/>
+      </div>
+      <div class="mobile-icon">
+        <img src="./resources/images/ic-online.svg"/>
+      </div>
+      <div class="mobile-icon">
+        <img src="./resources/images/ic-login.svg"/>
+      </div>
     </div>
   </div>
+
 
 <!--Block 1-->
 
@@ -64,7 +80,8 @@
       <div class="feature" id="orientation">
         <div class="feature-left">
           <div>
-          <img src="./resources/images/information-orientation.jpg"/>
+          <img src="./resources/images/information-orientation.jpg" class="image-desktop">
+          <img src="./resources/images/information-orientation-mobile.jpg" class="image-mobile">
         </div>
         </div>
         <div class="feature-right">
@@ -77,7 +94,8 @@
       <div class="feature">
         <div class="feature-left">
           <div>
-          <img src="./resources/images/information-campus.jpg"/>
+          <img src="./resources/images/information-campus.jpg"class="image-desktop">
+          <img src="./resources/images/information-campus-mobile.jpg"class="image-mobile">
         </div>
         </div>
         <div class="feature-right">
@@ -90,7 +108,8 @@
       <div class="feature" id="lecture">
         <div class="feature-left">
           <div>
-          <img src="./resources/images/information-guest-lecture.jpg">
+          <img src="./resources/images/information-guest-lecture.jpg"class="image-desktop">
+          <img src="./resources/images/information-guest-lecture-mobile.jpg"class="image-mobile">
         </div>
         </div>
         <div class="feature-right">
@@ -109,6 +128,7 @@
     <div class="content-container">
     <h2>Start learning</h2>
 
+    <div class="courses-desktop-container">
     <div class="course-row">
       <div class="course">
         <img src="./resources/images/course-software.jpg"/>
@@ -168,6 +188,30 @@
       </div>
     </div>
   </div>
+
+  <!--Mobile Content-->
+
+  <div class="courses-mobile-container">
+    <div class="course-mobile">
+      <h3>Software engineering</h3>
+    </div>
+    <div class="course-mobile">
+      <h3>Computer art</h3>
+    </div>
+    <div class="course-mobile">
+      <h3>Design</h3>
+    </div>
+    <div class="course-mobile">
+      <h3>Data</h3>
+    </div>
+    <div class="course-mobile">
+      <h3>Business</h3>
+    </div>
+    <div class="course-mobile">
+      <h3>Marketing</h3>
+    </div>
+  </div>
+  </div>
   </div>
 
 <!--Block 4-->
@@ -182,7 +226,7 @@
           <source src="./resources/videos/thesis.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <div>
+        <div id="thesis-text">
           <h3>Reimagine urban</h3>
           <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex.
              Etiam eqet magna laoreet, efficitur dolor consequat, trisique ligula."</p>
